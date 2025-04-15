@@ -174,7 +174,9 @@ import Combine
             }
         }
     }
-    
+
+    public var isLoaded: Bool { riveModel?.riveFile.isLoaded ?? false }
+
     open var isPlaying: Bool { riveView?.isPlaying ?? false }
     
     open var autoPlay: Bool
